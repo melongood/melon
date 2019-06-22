@@ -42,6 +42,4 @@ async def on_message(message, choicenumber=None):
         role = discord.utils.get(message.guild.roles, name="뮤트")
         await  author.add_roles(role)
 
-
-
 client.run("NTg4NjYzMjE3MDMxNDc5MzE2.XQRXig.DKzsr3EoMEzf9ZuV_zMlFPFXf8o")
