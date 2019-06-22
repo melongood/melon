@@ -1,6 +1,8 @@
 from typing import Optional, Any
 
 import discord
+import os
+
 
 client = discord.Client()
 
@@ -35,4 +37,5 @@ async def on_message(message):
         msg = message.content[23:]
         await author.send(msg)
 
-client.run("NTg5NjAyMjQzMjA0ODc0MjQw.XQWD9w.FeUj6T7nBK4k8dhuXyTxvNYyGuQ")
+access_token = os.envinon["BOT_TOKEN"]
+client.run(access_token)
